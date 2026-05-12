@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ElectroMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>ElectroMart</h1>
+    <p>Smart Electronics for Smart Life</p>
+</header>
+
+<div class="controls">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search electronics..."
+        onkeyup="applyFilters()">
+
+    <select id="categoryFilter" onchange="applyFilters()">
+        <option value="all">All Categories</option>
+        <option value="mobile">Mobiles</option>
+        <option value="laptop">Laptops</option>
+        <option value="accessory">Accessories</option>
+    </select>
+
+    <select id="filterDropdown" onchange="applyFilters()">
+        <option value="">Filter by Price</option>
+        <option value="low-high">Low to High</option>
+        <option value="high-low">High to Low</option>
+    </select>
+</div>
+
+<div class="product-container" id="productContainer"></div>
+
+<script src="script.js"></script>
+<footer class="footer">
+    <p>© 2026 ElectroMart. All Rights Reserved.</p>
+    <p>Designed by Shrutika | Electronics Store Project</p>
+</footer>
+</body>
+</html>
